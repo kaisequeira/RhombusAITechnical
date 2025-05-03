@@ -1,0 +1,22 @@
+# Python
+*.pytest_cache
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# Disk
+uploads/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Migrations
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# IDEs and editors
+.vscode/
