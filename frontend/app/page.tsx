@@ -219,15 +219,14 @@ export default function Home() {
     try {
       await http.delete(API_ENDPOINTS.DELETE(fileId));
       setFiles((prevFiles) => prevFiles.filter((file) => file.id !== fileId));
-      if (fileData && fileData.id === fileId) setFileData(null);
-
+      if (fileData?.id === fileId) setFileData(null);
       return true;
     } catch (error) {
       console.error("Error deleting file:", error);
 
       return false;
     }
-  }, []);
+  }, [fileData]);
 
   /**
    * useEffect

@@ -1,4 +1,4 @@
-# RhombusAI Technical Project
+# RhombusAI Technical Assessment
 
 This repository contains the backend and frontend for the RhombusAI Technical Project. The backend is built with Django and Django REST Framework, while the frontend is built with Next.js and HeroUI.
 
@@ -69,13 +69,13 @@ The backend is located in the `backend` directory and is built using Django.
 1. Apply database migrations:
 
    ```bash
-   python manage.py migrate
+   python3 manage.py migrate
    ```
 
 2. Start the development server:
 
    ```bash
-   python manage.py runserver
+   python3 manage.py runserver
    ```
 
    The backend will be available at [http://localhost:8000](http://localhost:8000).
