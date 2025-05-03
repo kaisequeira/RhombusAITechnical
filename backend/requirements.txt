@@ -1,0 +1,13 @@
+# ─── Core framework ─────────────────────────────────────────────────────────────
+Django>=4.2,<5
+djangorestframework>=3.14,<3.15     # DRF views & parsers
+
+# ─── Data processing ───────────────────────────────────────────────────────────
+pandas>=2.2                         # DataFrames / type inference
+numpy>=1.26                         # Pandas’ numeric backbone
+
+# ─── File uploads & CORS (optional but common) ─────────────────────────────────
+django-cors-headers>=4.3            # if you serve the API to a JS frontend
+
+# ─── Dev / lint / test extras ──────────────────────────────────────────────────
+pytest>=8.1                         # tests
