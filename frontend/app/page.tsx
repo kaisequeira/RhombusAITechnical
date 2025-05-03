@@ -215,18 +215,22 @@ export default function Home() {
    * @param fileId - The ID of the file to be deleted.
    * @returns {Promise<boolean>} - A promise that resolves to true if the deletion was successful, false otherwise.
    */
-  const deleteFile = useCallback(async (fileId: string) => {
-    try {
-      await http.delete(API_ENDPOINTS.DELETE(fileId));
-      setFiles((prevFiles) => prevFiles.filter((file) => file.id !== fileId));
-      if (fileData?.id === fileId) setFileData(null);
-      return true;
-    } catch (error) {
-      console.error("Error deleting file:", error);
+  const deleteFile = useCallback(
+    async (fileId: string) => {
+      try {
+        await http.delete(API_ENDPOINTS.DELETE(fileId));
+        setFiles((prevFiles) => prevFiles.filter((file) => file.id !== fileId));
+        if (fileData?.id === fileId) setFileData(null);
 
-      return false;
-    }
-  }, [fileData]);
+        return true;
+      } catch (error) {
+        console.error("Error deleting file:", error);
+
+        return false;
+      }
+    },
+    [fileData],
+  );
 
   /**
    * useEffect

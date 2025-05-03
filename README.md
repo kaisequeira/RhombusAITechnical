@@ -128,6 +128,10 @@ The frontend is located in the `frontend` directory and is built using Next.js.
 
 ---
 
+## Pre-Commit Hooks
+
+Linting for the frontend (including Prettier and ESLint checks) as well as backend tests will run when committing. Please ensure that this is satisfied before pushing to master. You should avoid skipping the pre-commit hook when possible.
+
 ## Project Structure
 
 ```
