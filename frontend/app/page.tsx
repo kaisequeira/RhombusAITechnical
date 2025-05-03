@@ -270,6 +270,7 @@ export default function Home() {
       </div>
 
       <Image
+        fill
         alt="Pattern"
         className="absolute inset-0 w-full h-full object-cover opacity-50"
         src="/looper-pattern.svg"
@@ -295,7 +296,6 @@ export default function Home() {
                       setIsLoading(false);
                     }}
                     onFileUpload={handleFileUpload}
-                    onProcessed={setFileData}
                     onUploadStart={() => setIsLoading(true)}
                   />
                 )}

@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+    "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix && prettier . --write"
   },
   "dependencies": {
     "@heroui/alert": "^2.2.19",
@@ -36,6 +36,7 @@
     "@radix-ui/react-slot": "^1.2.0",
     "@react-aria/ssr": "3.9.8",
     "@react-aria/visually-hidden": "3.8.22",
+    "@react-stately/table": "^3.14.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "2.1.1",
     "framer-motion": "11.13.1",

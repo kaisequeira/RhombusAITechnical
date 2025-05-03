@@ -3,6 +3,7 @@
 import { Button } from "@heroui/button";
 import { Moon, Sun } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
@@ -33,7 +34,7 @@ export function ThemeHeader({ children }: ThemeHeaderProps) {
     >
       <div className="flex flex-row justify-between h-20 bg-foreground-100 shadow-md transition-colors px-5 items-center z-10">
         <div className="flex flex-row gap-3 items-center">
-          <img alt="Rhombus AI" src="/RhombusAI.svg" />
+          <Image alt="Rhombus AI" src="/RhombusAI.svg" width={30} height={30} />
           <h1 className="tracking-tight inline font-bold from-[#0FB7CB] to-[#4986f8] bg-clip-text text-transparent text-3xl bg-gradient-to-b">
             Rhombus AI&nbsp;
           </h1>
@@ -44,7 +45,7 @@ export function ThemeHeader({ children }: ThemeHeaderProps) {
           variant="flat"
           onClick={toggleTheme}
         >
-          {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+          {theme === "dark" ? <Moon size={20} /> : <Sun size={20} />}
         </Button>
       </div>
       <div className="flex flex-1">{children}</div>

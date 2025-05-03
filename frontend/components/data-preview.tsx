@@ -219,7 +219,9 @@ export function DataPreview({
 
           {data.id && (
             <Button
+              className="disabled:cursor-not-allowed"
               color="success"
+              disabled={hasChangedOverrides}
               isLoading={isDownloading}
               startContent={<Download size={18} />}
               variant="flat"
@@ -285,7 +287,7 @@ export function DataPreview({
           <Alert
             color="secondary"
             icon={<ShieldAlert size={12} />}
-            title={`Type overrides are marked`}
+            title={`Type overrides are marked. You may not download the file until you apply changes.`}
           />
         </div>
       )}

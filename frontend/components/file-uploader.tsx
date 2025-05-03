@@ -9,14 +9,12 @@ import { Upload } from "lucide-react";
 
 interface FileUploaderProps {
   onUploadStart: () => void;
-  onProcessed: (data: any) => void;
   onError: (message: string) => void;
   onFileUpload: (file: File) => Promise<void>;
 }
 
 export function FileUploader({
   onUploadStart,
-  onProcessed,
   onError,
   onFileUpload,
 }: FileUploaderProps) {

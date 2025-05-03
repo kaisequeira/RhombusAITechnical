@@ -2,6 +2,17 @@
 
 This repository contains the backend and frontend for the RhombusAI Technical Project. The backend is built with Django and Django REST Framework, while the frontend is built with Next.js and HeroUI.
 
+## Screenshots
+
+### Data Preview View
+![Data Preview View](docs/DataPreviewView.png)
+
+### File History View
+![File History View](docs/FileHistoryView.png)
+
+### Upload File View
+![Upload File View](docs/UploadFileView.png)
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -30,14 +41,14 @@ cd RhombusAITechnical
 
 ## Backend Setup
 
-The backend is located in the `TA/backend` directory and is built using Django.
+The backend is located in the `backend` directory and is built using Django.
 
 ### Installing Dependencies
 
 1. Navigate to the backend directory:
 
    ```bash
-   cd TA/backend
+   cd backend
    ```
 
 2. Create a virtual environment:
@@ -71,13 +82,7 @@ The backend is located in the `TA/backend` directory and is built using Django.
 
 ### Linting and Testing
 
-1. To lint the backend code, use `flake8` (if configured):
-
-   ```bash
-   flake8
-   ```
-
-2. To run tests for the backend, including the `utils.py` file:
+1. To run tests for the backend, relating to the `utils.py` file:
 
    ```bash
    pytest backend/apiprocessor/tests
@@ -87,14 +92,14 @@ The backend is located in the `TA/backend` directory and is built using Django.
 
 ## Frontend Setup
 
-The frontend is located in the `TA/frontend` directory and is built using Next.js.
+The frontend is located in the `frontend` directory and is built using Next.js.
 
 ### Installing Dependencies
 
 1. Navigate to the frontend directory:
 
    ```bash
-   cd TA/frontend
+   cd frontend
    ```
 
 2. Install dependencies using `pnpm`:
@@ -115,7 +120,7 @@ The frontend is located in the `TA/frontend` directory and is built using Next.j
 
 ### Linting
 
-1. To lint the frontend code, use the configured ESLint rules:
+1. To lint the frontend code, use the following command which will run both ESLint and Prettier:
 
    ```bash
    pnpm run lint
@@ -141,6 +146,7 @@ RhombusAITechnical/
 │   ├── pnpm-lock.yaml
 │   ├── tailwind.config.js
 ├── README.md
+├── docs/
 ```
 
 ---
