@@ -1,6 +1,8 @@
 # RhombusAI Technical Assessment
 
-This repository contains the backend and frontend for the RhombusAI Technical Project. The backend is built with Django and Django REST Framework, while the frontend is built with Next.js and HeroUI.
+This repository contains the backend and frontend for the RhombusAI Technical Project. The backend is built with Django and Django REST Framework, while the frontend is built with Next.js and HeroUI. For a detailed walkthrough of the project functionality, you can view the demonstration video using the link below:
+
+[Technical Assessment Demonstration Video](https://drive.google.com/file/d/1DRkUaAT-36fgSKsKVeIFwaJQBVbRwvHL/view?usp=sharing)
 
 ## Screenshots
 
